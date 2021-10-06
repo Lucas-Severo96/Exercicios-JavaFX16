@@ -24,12 +24,14 @@ public class Contador extends Application{
 		
 		
 		Button botaoDecremento = new Button("-");
+		botaoDecremento.getStyleClass().add("botoes");
 		botaoDecremento.setOnAction(e -> {
 			contador--;
 			labelNumero.setText(Integer.toString(contador));
 		});
 		
 		Button botaoIncremento = new Button("+");
+		botaoIncremento.getStyleClass().add("botoes");
 		botaoIncremento.setOnAction(e -> {
 			contador++;
 			labelNumero.setText(Integer.toString(contador));
